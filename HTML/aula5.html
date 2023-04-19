@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 5 tags html para texto</title>
+    
+        <style>
+            #inicio{
+                color: rebeccapurple;
+                font-size: 50px;
+            }
+
+            b{
+                color: brown;
+            }
+
+            h1{
+                background: pink;
+            }
+
+            .img-in-text{
+                width: 50px;
+                height: 50px;
+            }
+
+            .teste{
+                font-size: 25px;
+                color: blueviolet;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="inicio" style="background: palevioletred;">
+            Inicio aula 5
+        </h1>
+
+        <hr>
+
+        <p style="font-style: italic; font-size: 20px;">
+            Lorem ipsum <del>dolor</del> <ins>sit</ins> amet <small>consectetur</small>, <b>adipisicing</b> elit.
+        </p>
+
+        <hr>
+
+        <p style="font-style: italic; font-size: 20px;">
+            Lorem <s>ipsum</s> dolor sit amet <u>consectetur</u>, <b>adipisicing</b> <q>elit</q>.
+        </p>
+
+        <hr>
+
+        <p>
+            <a href="https://www.instagram.com/vbs.vini/" target="_blank">
+                <img class="img-in-text" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="lobo deitado no campo">
+            </a>
+            <b>Lorem</b>, ipsum dolor sit amet 5<sup>3</sup>consectetur H<sub>2</sub>O adipisicing elit.<br>
+            Pariatur <strong>recusandae</strong> consectetur aliquid <i>neque</i>, quam rem facere<br>
+            autem <a href="https://github.com/ghist" target="_blank">error</a> assumenda <em>mollitia</em> obcaecati eius.
+
+        </p>
+
+        <hr>
+
+        <blockquote>Isso aqui é uma citação para aprender sobre a tag blockquote</blockquote>
+
+        <blockquote><p>Isso aqui é uma citação para aprender sobre a tag blockquote, também é possivel ter
+            um paragrafo dento do quote, mas nao ao contrario.
+        </p></blockquote>
+
+        <hr>
+
+        <code>
+            const precoProduto = 10; <br>
+            const condicaoPagamento = 4; <br>
+            
+            if(condicaoPagamento === 1){<br>
+                const total = precoProduto - (precoProduto * 0.10);<br>
+                console.log(total);<br>
+            }else if(condicaoPagamento === 2){<br>
+                const total = precoProduto - (precoProduto * 0.15);<br>
+                console.log(total);<br>
+            }else if(condicaoPagamento === 3){<br>
+                console.log(precoProduto);<br>
+            }else{<br>
+                const total = precoProduto + (precoProduto * 0.10);<br>
+                console.log(total);<br>
+            }
+        </code>
+
+        <hr>
+
+        <pre>
+            <code>
+                
+                    A tag pre funciona deixando todos os espaços e formatação definidos
+                    como devem ser e estão dentro do codigo diferente do exemplo acima que tive que 
+                    usar a tag quebra de linha br, alem disso, a tag code é uma tag para codigos
+
+                const precoProduto = 10;
+                const condicaoPagamento = 4;
+   
+                if(condicaoPagamento === 1){
+                    const total = precoProduto - (precoProduto * 0.10);
+                    console.log(total);
+                }else if(condicaoPagamento === 2){
+                    const total = precoProduto - (precoProduto * 0.15);
+                    console.log(total);
+                }else if(condicaoPagamento === 3){
+                    console.log(precoProduto);
+                }else{
+                    const total = precoProduto + (precoProduto * 0.10);
+                    .log(total);
+                }
+            </code>
+        </pre>
+
+        <hr>
+
+        <p>
+            existe outra tag que é a <span class="teste">span</span>, ela pode ser colocada dentro de paragrafos<br>
+            já que é uma tag inline, serve para reter certa palavra ou frase para fora dos usos gerais como<br>
+            pode se obervar na propria palavra.<br>
+            Ele pode ser usado para agrupar elementos para fins de estilo usando os atribudos class ou id.
+        </p>
+
+        <h1>Tudo ao nosso alcance</h1>
+    </body>
+</html>
