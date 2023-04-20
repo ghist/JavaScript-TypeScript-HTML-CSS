@@ -1,0 +1,86 @@
+os atributos sao usados para personalizar alguma tag, modificando sua estrutura ou funcionalidade
+
+class="" -> atribui uma classe ao elemento, a mesma classe pode ser utilizada em um ou mais elementos
+id=" -> atribui um id ao elemento, só pode ser adicionado um id unico para um só elemento
+style="" -> permite incluir elementos css dentro da tag, elementos de personalização
+lang="" -> define a linguagem do texto
+title="" -> define o titulo de um elemento
+alt="" -> texto alternativo, usado muito para leitores de tela
+hidden -> oculta o elemento
+width="" -> define a largura para o elemento
+heigth="" -> define o tamanho para o elemento
+
+
+<!-- --> tag comentario, tudo dentro nao aparece no navegador
+
+tags estruturais
+<header></header> -> Essa tag define um cabeçalho, todo conteudo que tiver dentro dela faz parte
+do cabeçalho, pode ser utilizado dentro de outras sessões.
+<main></main> -> Essa tag representa o conteudo princinpal do seu corpo "body", o conteudo
+relacionado diretamente com o topico central da pagina ou com funcionalidade central da aplicação.
+<footer></footer> -> Essa tag define um rodape, é utilizada mais no fim da pagina, assim como header
+tudo que tiver dentro dessa tag, faz parte do rodape.
+<section></section> -> Essa tag define uma seção para a pagina.
+<article></article> -> Essa tag define um artigo da sua pagina. São utilizadas para separar o 
+conteudo da sua pagina.
+<aside></aside> -> Essa tag representa uma seção da pagina que tenha certo relacionamento com o
+conteudo entorno que pode ser considerado separado do conteudo.
+<nav></nav> -> Tag utilizada para definir um conteudo de navegação. utilizado para criação de menus.
+<div></div> -> Define uma divisão da pagina. Funciona como um container para conteudo de fluxo
+Uma vez que nao possui valor semantico, é muito utilizado para fazer a divisão e organizar melhor os
+conteudos da pagina.
+
+tags html de texto
+<p></p> -> principal tag de texto, compoe um paragrafo.
+<span></span> -> Tem funcionalidade e caracteristicas parecidas com a de paragrafos,
+é mais utilizado para pequenas informações como legendas de formulario, imagem, etc..
+também podem ser utilizada para formar um container.
+<pre></pre> -> Utilizada para texto pré-formatados. Muito utilizada para apresentar codigos, já
+que mantem os espaços como estão colocados.
+<b></b> -> Deixa o texto entre da tag em negrito.
+<i></i> -> Deixa o texto entre a tag em italico.
+<br> -> Tag utilizada para quebra de linha, não precisa de fechamento.
+<hr> -> Forma uma linha horizontal, não precisa de fechamento.
+
+tag de link html 
+<a></a> -> É responsavel por fazer a ligação entre um documento e outro, sendo da mesma pagina ou 
+de outro dominio, para isso é necessário o atributo href="", onde o link deve ir dentro das "".
+ex: <p>Para acessar o Google, <a href="https://www.google.com">clique aqui.</a></p>
+
+tags html de multimidia
+<img> -> Não necessita de fechamento, serve para incluir uma imagem ao seu texto. Para isso é necessario
+o atributo src="" que contem o link ou endereço daimagem. Pode conter também o atributo alt="" já explicado.
+ex:<img src="imagens/imagem1.jpg" alt="imagem 1 da minha página">
+
+<video></video> e <audio></audio> -> ambos funcionam da mesma maneira, serve para indicar a inserção de um
+video ou audio. Com isso, devemos colocar alguns atributos dentro da tag para ativar os controles
+esse atributo é o "controls", dentro da tag devemos incluir também a tag <source> que nao precisa de
+fechamento, nela incluimos os atributos src="" e type="", que se refere a localização do video e seu tipo,
+por fim podemos colocar uma msg caso o video nao seja carregado pelo navegador.
+ex:<video controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+    Seu navegador não possui suporte para Vídeos.
+  </video>
+
+<iframe></iframe> -> Serve para incluir recursos de uma outra pagina nesta pagina. Para inserir um iframe
+basta colocar o atributo src="". Alem disso, é possivel incluir um texto dentro do elemento caso o 
+navegador do usuario nao apresente suporte para o iframe.
+ex:<iframe src="https://www.homehost.com.br">
+    <p>Seu navegador não possui suporte para iFrames.</p>
+  </iframe>
+
+tags html de listas
+<oL></oL> -> criação de lista ordenada.
+<ul></ul> -> criação de lista nao ordenada.
+<li></li> -> Necessaria para colocar os itens dentro das listas. Essa tag vai dentro de uma dos dois
+tipos de tag de lista, e dentro dela vai o que queremos colocar.
+ex:<ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ol>
+
+
+
+
